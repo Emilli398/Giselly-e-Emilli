@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.header {
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(13, 13, 12, 1)
+  margin-bottom: 10px;
+} 
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: right;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links .btn {
+  background: #ff7750;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+.language {
+  padding: 4px;
+}
+
+.hero {
+  background: #fdf1ed;
+  padding: 80px 0;
+  text-align: left;
+  display:flex;
+  justify-content:center;
+  margin:36px;
+}
+
+.hero .sublinhado {
+  text-decoration-color:red;
+  text-decoration: underline;
+}
+
+.btn {
+  background: #ff7750;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.demo-link {
+  display: inline-block;
+  margin: 10px;
+  color: #555;
+  text-decoration: underline;
+  background:white;
+  border-radius: 100px;
+   padding: 10px 20px;
+}
+
+.features {
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.image-right{
+  width:
+  height:auto;
+}
+
+.feature-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.feature-box {
+  
+  background:#f9f9f9;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.popular {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.trip-card {
+  background:#fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 90px 5px 8px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+  background-color: #ddd;
+  height: 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ff7750;
+  border-radius: 5px;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.steps-section {
+  text-align: center;
+  padding:30px 20px;
+}
+
+.steps-section h2 {
+  color: #14183E;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  gap: 40px;
+}
+.coluna {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.step {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 40px;
+  color: #FF715B;
+  margin-bottom: 20px;
+}
+
+.step h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #14183E;
+}
+
+.step p {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    align-items:left;
+  }
+}
+
+
+.subscribe {
+  background: #ff7750;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.subscribe input {
+  padding: 10px;
+  width: 250px;
+  max-width: 80%;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background: #fff;
+  color: #ff7750;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .trip-grid, .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe button {
+    width: 100%;
+    margin: 0;
+  }
+}
